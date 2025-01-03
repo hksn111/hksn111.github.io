@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub Actions - 标签 | 菠菜眾長</title>
+    <link>https://lruihao.cn/tags/github-actions/</link>
+    <description>Hugo FixIt 作者，喜欢瞎折腾、造轮子、写东西，分享一些前端开发中的所见、所闻、所思。</description>
+    <generator>Hugo 0.140.2 &amp; FixIt v0.3.17-30a67c4b</generator>
+    <language>zh-CN</language>
+    <managingEditor>1024@lruihao.cn (Lruihao)</managingEditor>
+    <webMaster>1024@lruihao.cn (Lruihao)</webMaster>
+    <copyright>本站内容采用 CC BY-NC-SA 4.0 国际许可协议。</copyright>
+    <lastBuildDate>Fri, 03 Jan 2025 19:16:30 +0800</lastBuildDate>
+    <atom:link href="https://lruihao.cn/tags/github-actions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node.js &#43; GitHub Actions 自动刷新 CDN</title>
+      <link>https://lruihao.cn/posts/qcloudcdn/</link>
+      <pubDate>Sun, 07 Aug 2022 14:40:33 +0800</pubDate><author>1024@lruihao.cn (Lruihao)</author>
+      <guid>https://lruihao.cn/posts/qcloudcdn/</guid>
+      <category domain="https://lruihao.cn/categories/node.js/">Node.js</category>
+      <category domain="https://lruihao.cn/categories/javascript/">JavaScript</category>
+      <description>&lt;div class=&#34;details admonition question open&#34;&gt;&#xA;  &lt;div class=&#34;details-summary admonition-title&#34;&gt;&lt;i class=&#34;icon fa-fw fa-regular fa-circle-question&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;问题&lt;i class=&#34;details-icon fa-solid fa-angle-right fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xA;  &lt;div class=&#34;details-content&#34;&gt;&#xA;    &lt;div class=&#34;admonition-content&#34;&gt;腾讯云云函数从 2022 年 6 月 1 日开始收费了，差不多每个月 12 块，对于可能几个月都用不上一次云函数刷新缓存的人来说，有点太贵了。&#xA;使用 Node.js 和 GitHub Actions 刷新 CDN 的方式，可以节省不少钱。&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Hugo 使用 GitHub Actions 部署到 GithHb Pages 和 腾讯云 cos 桶</title>
+      <link>https://lruihao.cn/posts/github-actions/</link>
+      <pubDate>Mon, 04 Oct 2021 23:46:49 +0800</pubDate><author>1024@lruihao.cn (Lruihao)</author>
+      <guid>https://lruihao.cn/posts/github-actions/</guid>
+      <category domain="https://lruihao.cn/categories/memo/">Memo</category>
+      <category domain="https://lruihao.cn/categories/git/">Git</category>
+      <description>&lt;div class=&#34;details admonition quote open&#34;&gt;&#xA;  &lt;div class=&#34;details-summary admonition-title&#34;&gt;&lt;i class=&#34;icon fa-fw fa-solid fa-quote-right&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;解決痛點&lt;i class=&#34;details-icon fa-solid fa-angle-right fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xA;  &lt;div class=&#34;details-content&#34;&gt;&#xA;    &lt;div class=&#34;admonition-content&#34;&gt;Github Actions 真是靜態博客的福音，有了它 hugo, hexo 等博客構建過程可以丟給 Github 的服務器幫我們做了。&lt;br&gt;&#xA;也就是説實現了在線寫靜態博客的需求。&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

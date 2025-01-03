@@ -1,0 +1,186 @@
+# 个人博客从 Hexo 迁移至 Hugo
+
+
+&gt; 电脑升级 win 11 后，分盘操作存在 bug, 然后又不小心把装代码的盘格式化了，虽然都有备份到 github, 但是当时为了省事，hexo Node 安装的很多以来插件都没有备份，现在又下载不到了，所以 hexo 博客没办法完整复原，另外，早就觉得基于 Node 的 hexo 实在有些臃肿，且博客内容多了以后部署太慢，就干脆乘机换了好了，经过一段时间寻找，最终选择了基于 Go 的 hugo, 记录一下迁移过程及待办事项。
+
+&lt;!--more--&gt;
+
+## Hugo 准备
+
+### 概念
+
+&gt; Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.
+
+那 hugo 基于编译语言 GO 构建，对于静态页面的构建肯定是碾压 hexo 的存在，其官方标语也是很直白 `&#34;The world’s fastest framework for building websites&#34;`, 作为先后使用过 hexo 和 hugo 的我来说，这确实名副其实。
+
+- [gohugo](https://gohugo.io)
+
+### 安装
+
+hugo 提供了很多种安装方式，Git, Docker, Binary.  
+个人电脑使用二进制安装是最方便快捷的，无需安装其他依赖。  
+到 [Hugo Releases](https://github.com/gohugoio/hugo/releases) 下载对应的 windows 操作系统版本的 Hugo 二进制文件，玩就要玩全的，所以我就选择了扩展版本，此次选择的最新版为 `hugo_extended_0.88.1_Windows-64bit.zip`, 然后自行解压安装即可。
+
+### 生成站点
+
+使用 Hugo 快速生成站点，比如希望生成到 `/path/to/site` 路径：
+
+```bash
+hugo new site /path/to/site
+```
+
+站点目录结构：
+
+&lt;!-- markdownlint-disable MD046 --&gt;
+
+    ▸ archetypes/    # 配置文章模板，相当于 hexo 的 scaffolds
+    ▸ content/       # 文章页面内容，相当于 hexo 的 source
+    ▸ data/          # 可存放一些 yaml, json, toml 格式的数据
+    ▸ layouts/       # 页面布局源码，改造主题可不动主题源码
+    ▸ static/        # 静态文件存放
+      config.toml    # 站点配置文件，相当于 hexo 的 _config.yml
+
+### 创建文章
+
+注：路径要写以 `content/` 为根目录的相对路径
+
+```bash
+hugo new path/fileName
+```
+
+### 添加主题
+
+添加主题的方式选用 Git 子模组的形式，为了日后快速升级，避免在使用 hexo 中因大量魔改 next 主题而导致难以升级的困扰。  
+精挑细选最终选择了 ~~[LoveIt](https://github.com/dillonzq/LoveIt)~~ =&gt; [FixIt](https://github.com/Lruihao/FixIt)
+
+```bash
+git init
+git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
+```
+
+在 `config.toml` 添加 ~~theme = &#34;LoveIt&#34;~~
+
+```toml
+theme = &#34;FixIt&#34;
+```
+
+### 在本地启动网站
+
+使用以下命令启动网站：
+
+```bash
+hugo serve --disableFastRender
+```
+
+去查看 `http://localhost:1313`
+
+### hugo build
+
+使用以下命令生成静态文件，然后自己可手动选择部署到 github pages 或 COS 等服务器
+
+```bash
+hugo --minify
+```
+
+## 写作指北
+
+- [FixIt 主题文档 - 基本概念](https://fixit.lruihao.cn/zh-cn/theme-documentation-basics)
+- [FixIt 主题文档 - 内容](https://fixit.lruihao.cn/zh-cn/theme-documentation-content/)
+- [FixIt 主题文档 - 内置 Shortcodes](https://fixit.lruihao.cn/zh-cn/theme-documentation-built-in-shortcodes/)
+- [FixIt 主题文档 - 扩展 Shortcodes](https://fixit.lruihao.cn/zh-cn/theme-documentation-extended-shortcodes/)
+
+## Todo list
+
+&lt;!-- markdownlint-disable MD034 --&gt;
+
+{{&lt; link href=&#34;https://github.com/Lruihao/hugo-blog&#34; content=&#34;本站源码备份&#34; card=true &gt;}}
+
+&gt; 原来 hexo 做了大量的美化和扩展功能，迁移到 hugo 想尽可能多的保留。取之精华，去其糟粕。
+
+### Base
+
+&lt;!-- markdownlint-disable MD033 --&gt;
+
+- [x] 迁移 hexo 所有文章内容
+- &lt;details&gt;
+  &lt;summary&gt;迁移 hexo 所有页面内容&lt;/summary&gt;
+
+  - [x] 留言页面
+  - [x] 网友打赏支持页面，整合到留言页面
+  - [x] 重写关于页面，一切从简
+  - [x] 友情链接页面
+  - [-] 重写 404 页面
+  - [x] 站点时间和不蒜子计数改到 hello-world 页面
+
+&lt;/details&gt;
+
+- [-] [cos-album](https://img.lruihao.cn) 和 [🍚 饭醉团伙 🍷](https://sz.journey.lruihao.cn) 整合到博客 cos-album/ [#7 (wontfix)](https://github.com/Lruihao/hugo-blog/issues/7)
+- [-] 新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等（保持原本博客的纯粹性）
+- [x] 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化（但似乎没必要）
+- [x] 博客 SEO 优化迁移 &lt;sup&gt;[baidu_urls.txt](#seo-ref)&lt;/sup&gt;&lt;a id=&#34;seo&#34;&gt;&lt;/a&gt;
+- [x] `Github actions` 自动部署到 **Github pages** 和 **COS** 脚本编写
+- [x] hugo 本地管理 shell 脚本工具编写
+- [x] 知乎卡片式链接 改成 hugo shortcodes, 取名 `cardlink`
+- &lt;details&gt;
+  &lt;summary&gt;zxm/沐目体 归档 :( &lt;a href=&#34;https://github.com/Lruihao/hugo-blog/issues/6&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;#6&lt;/a&gt;&lt;/summary&gt;
+
+  - [x] 安装 沐目体
+  - [x] 压缩 沐目体 fontspider
+  - [x] 沐目体 post 修订
+  - [x] typyit 配合 随机诗词和网易云热评 API
+  - [x] 实时预览功能 base on Vuejs
+  - [x] [恋爱叙事体] `love` 归档
+  - [x] [光] 归档
+
+&lt;/details&gt;
+
+- [x] hugo 内容加密研究 [#3](https://github.com/Lruihao/hugo-blog/issues/3)
+- [x] `Lruihao/hugo-blog` README 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version
+- [x] 更换 gravatar 头像 [#4](https://github.com/Lruihao/hugo-blog/issues/4)
+- [x] 博客在线编辑器研究 github1s 等 [#5](https://github.com/Lruihao/hugo-blog/issues/5)
+
+---
+
+&lt;a id=&#34;seo-ref&#34;&gt;&lt;/a&gt;`[baidu_urls.txt]:`[↩︎](#seo)
+
+生成百度链接集合小技巧，关掉归档分页，在归档页面控制台执行以下代码即可获得所有文章链接
+
+```javascript
+let urls = [];
+for (let a of document.querySelectorAll(&#39;.archive-item a&#39;)) {
+  urls.push(a.href);
+}
+console.log(urls.join(&#39;\n&#39;));
+```
+
+&gt; {{&lt; version 0.2.15 &gt;}} FixIt 主题已支持自动输出 `baidu_urls.txt` 文件
+
+---
+
+### Theme FixIt
+
+&gt; ~~hugo LoveIt 主题整体优化，必要时建 PR 或 issue 到 LoveIt 仓库~~ (LoveIt 已停更一年多）  
+&gt; ~~先把自己发现和 LoveIt 原 repo 的 issue 尽可能的修复，修改的原则是：**不改动原项目代码**，~~  
+&gt; ~~唯一途径就是在站点相同的目录用**新增**的方式替代**修改、删除**操作。~~  
+&gt; ~~之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。~~  
+&gt; 为了更好的完善博客功能以及修复 BUG 已创建新的主题 FixIt (fork from LoveIt)
+
+{{&lt; link href=&#34;https://github.com/Lruihao/FixIt&#34; content=&#34;Hugo theme FixIt&#34; card=true &gt;}}
+
+进度更新至 [#8](https://github.com/Lruihao/hugo-blog/issues/8)
+
+- [x] CSS 优化，背景，元素圆角化，外圆内方，居中对齐等
+- [x] 沐目体引入
+- [ ] TOC 序号生成
+- [x] Fix: 无标题时也会生成目录的 BUG
+- [x] subtitle 等细节优化
+- [x] Fix: typeit 打印代码时跑版的问题
+- [x] Fix: 文章 `h1` 标题多行跑版
+- [x] Code Review
+
+
+---
+
+> 作者: [Lruihao](https://github.com/Lruihao)  
+> URL: https://lruihao.cn/posts/hexo-to-hugo/  
+

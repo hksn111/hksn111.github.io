@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>termux - 标签 | 菠菜眾長</title>
+    <link>https://lruihao.cn/tags/termux/</link>
+    <description>Hugo FixIt 作者，喜欢瞎折腾、造轮子、写东西，分享一些前端开发中的所见、所闻、所思。</description>
+    <generator>Hugo 0.140.2 &amp; FixIt v0.3.17-30a67c4b</generator>
+    <language>zh-CN</language>
+    <managingEditor>1024@lruihao.cn (Lruihao)</managingEditor>
+    <webMaster>1024@lruihao.cn (Lruihao)</webMaster>
+    <copyright>本站内容采用 CC BY-NC-SA 4.0 国际许可协议。</copyright>
+    <lastBuildDate>Fri, 03 Jan 2025 19:16:30 +0800</lastBuildDate>
+    <atom:link href="https://lruihao.cn/tags/termux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>termux 基本使用教程</title>
+      <link>https://lruihao.cn/posts/termux1/</link>
+      <pubDate>Tue, 23 Oct 2018 22:16:02 +0800</pubDate><author>1024@lruihao.cn (Lruihao)</author>
+      <guid>https://lruihao.cn/posts/termux1/</guid>
+      <category domain="https://lruihao.cn/categories/memo/">Memo</category>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;前面有一篇文章写到一些，&lt;a href=&#34;https://lruihao.cn/posts/termux/&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;在 Android 上搭建 hexo 博客&lt;i class=&#34;fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/a&gt;&#xA;&lt;strong&gt;本文当初摘要自 &lt;a href=&#34;https://www.sqlsec.com/2018/05/termux.html?yyue=a21bo.50862.201879&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;国光个人博客&lt;i class=&#34;fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/strong&gt;&#xA;如若作者博客 IP 被墙，可前往国光第三方博客诸如 csdn 等。&lt;a href=&#34;https://www.freebuf.com/geek/170510.html&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;备用&lt;i class=&#34;fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;初始化&#34; class=&#34;heading-element&#34;&gt;&lt;span&gt;1 初始化&lt;/span&gt;&#xA;  &lt;a href=&#34;#%e5%88%9d%e5%a7%8b%e5%8c%96&#34; class=&#34;heading-mark&#34;&gt;&#xA;    &lt;svg class=&#34;octicon octicon-link&#34; viewBox=&#34;0 0 16 16&#34; version=&#34;1.1&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34;&gt;&lt;path d=&#34;m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&lt;p&gt;下载并初始化 termux&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>在 Android 上搭建 hexo 博客</title>
+      <link>https://lruihao.cn/posts/termux/</link>
+      <pubDate>Sat, 11 Aug 2018 16:59:05 +0800</pubDate><author>1024@lruihao.cn (Lruihao)</author>
+      <guid>https://lruihao.cn/posts/termux/</guid>
+      <category domain="https://lruihao.cn/categories/memo/">Memo</category>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;暑假刚开始的时候放假回家没带电脑，只能玩手机，想折腾一下博客都没有条件，在一个发现一个 app, 卧槽 😱，termux 真的强大！（初始化需要科学上网）安卓手机上的 linux 简直了，在手机就可以搭了一个 hexo 博客，只要在 github 上实现分支管理就可以多终端同步更新了。恕我学疏才浅，还只想到这些！一开始想回校后，折腾一下 hexo-admin 实现类似动态博客一样的多终端管理（手动滑稽），现在发现 termux 这样子的操作也不错嘛，挺装哔 hhhhhh**&lt;a href=&#34;https://lruihao.gitee.io&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;部署后的效果&lt;i class=&#34;fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/a&gt;**&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+  </channel>
+</rss>

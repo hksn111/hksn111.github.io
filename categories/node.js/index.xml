@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node.js - 分类 | 菠菜眾長</title>
+    <link>https://lruihao.cn/categories/node.js/</link>
+    <description>Hugo FixIt 作者，喜欢瞎折腾、造轮子、写东西，分享一些前端开发中的所见、所闻、所思。</description>
+    <generator>Hugo 0.140.2 &amp; FixIt v0.3.17-30a67c4b</generator>
+    <language>zh-CN</language>
+    <managingEditor>1024@lruihao.cn (Lruihao)</managingEditor>
+    <webMaster>1024@lruihao.cn (Lruihao)</webMaster>
+    <copyright>本站内容采用 CC BY-NC-SA 4.0 国际许可协议。</copyright>
+    <lastBuildDate>Fri, 03 Jan 2025 19:16:30 +0800</lastBuildDate>
+    <atom:link href="https://lruihao.cn/categories/node.js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用 Node.js 开发一个轻量脚手架</title>
+      <link>https://lruihao.cn/projects/fixit-cli/</link>
+      <pubDate>Tue, 28 Nov 2023 10:48:07 +0800</pubDate><author>1024@lruihao.cn (Lruihao)</author>
+      <guid>https://lruihao.cn/projects/fixit-cli/</guid>
+      <category domain="https://lruihao.cn/categories/node.js/">Node.js</category>
+      <description>&lt;p&gt;本文将介绍如何用 Node.js 开发一个轻量脚手架，以 &lt;a href=&#34;https://github.com/hugo-fixit/fixit-cli&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;fixit-cli&lt;i class=&#34;fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/a&gt; 为例。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>如何给 npm 包打补丁？</title>
+      <link>https://lruihao.cn/posts/patch-package/</link>
+      <pubDate>Thu, 12 Oct 2023 22:37:56 +0800</pubDate><author>1024@lruihao.cn (Lruihao)</author>
+      <guid>https://lruihao.cn/posts/patch-package/</guid>
+      <category domain="https://lruihao.cn/categories/node.js/">Node.js</category>
+      <description>本文将介绍如何给 npm 包打补丁。</description>
+    </item>
+    <item>
+      <title>使用 Node.js 自动创建 Vue 的路由</title>
+      <link>https://lruihao.cn/posts/gen-router/</link>
+      <pubDate>Wed, 14 Jun 2023 00:11:17 +0800</pubDate><author>1024@lruihao.cn (Lruihao)</author>
+      <guid>https://lruihao.cn/posts/gen-router/</guid>
+      <category domain="https://lruihao.cn/categories/node.js/">Node.js</category>
+      <description>&lt;p&gt;最近在写一个 Vue 插件，需要在项目中创建一些测试页面，由于都是些静态路由，就想到之前看到过的一个项目就是用 Node.js 来自动生成路由的，于是就借鉴过来改了一下。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>解决 SourceTree 提交时候 husky 命令失败问题</title>
+      <link>https://lruihao.cn/posts/sourcetree-husky/</link>
+      <pubDate>Mon, 12 Jun 2023 10:58:44 +0800</pubDate><author>1024@lruihao.cn (Lruihao)</author>
+      <guid>https://lruihao.cn/posts/sourcetree-husky/</guid>
+      <category domain="https://lruihao.cn/categories/node.js/">Node.js</category>
+      <description>&lt;h2 id=&#34;问题描述&#34; class=&#34;heading-element&#34;&gt;&lt;span&gt;1 问题描述&lt;/span&gt;&#xA;  &lt;a href=&#34;#%e9%97%ae%e9%a2%98%e6%8f%8f%e8%bf%b0&#34; class=&#34;heading-mark&#34;&gt;&#xA;    &lt;svg class=&#34;octicon octicon-link&#34; viewBox=&#34;0 0 16 16&#34; version=&#34;1.1&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34;&gt;&lt;path d=&#34;m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&lt;p&gt;在使用 SourceTree 提交代码的时候，会出现 husky 命令失败的问题（通过命令行提交代码没有问题），如下图所示：&lt;/p&gt;&#xA;&lt;p&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;https://lruihao.cn/posts/sourcetree-husky/images/23_1686538807.png?size=large&#34; data-thumbnail=&#34;/posts/sourcetree-husky/images/23_1686538807.png?size=small&#34; data-sub-html=&#34;&lt;h2&gt;问题截图&lt;/h2&gt;&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lruihao.cn/posts/sourcetree-husky/images/23_1686538807.png&#34; alt=&#34;问题截图&#34; srcset=&#34;https://lruihao.cn/posts/sourcetree-husky/images/23_1686538807.png?size=small, https://lruihao.cn/posts/sourcetree-husky/images/23_1686538807.png?size=medium 1.5x, https://lruihao.cn/posts/sourcetree-husky/images/23_1686538807.png?size=large 2x&#34; data-title=&#34;问题截图&#34; style=&#34;--width: 1252px;--aspect-ratio: 1252 / 856;background: url(/images/loading.min.svg) no-repeat center;&#34; onload=&#34;this.title=this.dataset.title;for(const i of [&#39;style&#39;, &#39;data-title&#39;,&#39;onerror&#39;,&#39;onload&#39;]){this.removeAttribute(i);}this.dataset.lazyloaded=&#39;&#39;;&#34; onerror=&#34;this.title=this.dataset.title;for(const i of [&#39;style&#39;, &#39;data-title&#39;,&#39;onerror&#39;,&#39;onload&#39;]){this.removeAttribute(i);}&#34;/&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Node.js &#43; GitHub Actions 自动刷新 CDN</title>
+      <link>https://lruihao.cn/posts/qcloudcdn/</link>
+      <pubDate>Sun, 07 Aug 2022 14:40:33 +0800</pubDate><author>1024@lruihao.cn (Lruihao)</author>
+      <guid>https://lruihao.cn/posts/qcloudcdn/</guid>
+      <category domain="https://lruihao.cn/categories/node.js/">Node.js</category>
+      <category domain="https://lruihao.cn/categories/javascript/">JavaScript</category>
+      <description>&lt;div class=&#34;details admonition question open&#34;&gt;&#xA;  &lt;div class=&#34;details-summary admonition-title&#34;&gt;&lt;i class=&#34;icon fa-fw fa-regular fa-circle-question&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;问题&lt;i class=&#34;details-icon fa-solid fa-angle-right fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xA;  &lt;div class=&#34;details-content&#34;&gt;&#xA;    &lt;div class=&#34;admonition-content&#34;&gt;腾讯云云函数从 2022 年 6 月 1 日开始收费了，差不多每个月 12 块，对于可能几个月都用不上一次云函数刷新缓存的人来说，有点太贵了。&#xA;使用 Node.js 和 GitHub Actions 刷新 CDN 的方式，可以节省不少钱。&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>ttf 字体压缩</title>
+      <link>https://lruihao.cn/posts/web-font/</link>
+      <pubDate>Wed, 17 Oct 2018 21:38:06 +0800</pubDate><author>1024@lruihao.cn (Lruihao)</author>
+      <guid>https://lruihao.cn/posts/web-font/</guid>
+      <category domain="https://lruihao.cn/categories/node.js/">Node.js</category>
+      <description>&lt;p&gt;HTML 网页引用中文字体，文件过大，加载缓慢的解决办法。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

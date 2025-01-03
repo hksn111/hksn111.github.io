@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CosAlbum - 标签 | 菠菜眾長</title>
+    <link>https://lruihao.cn/tags/cosalbum/</link>
+    <description>Hugo FixIt 作者，喜欢瞎折腾、造轮子、写东西，分享一些前端开发中的所见、所闻、所思。</description>
+    <generator>Hugo 0.140.2 &amp; FixIt v0.3.17-30a67c4b</generator>
+    <language>zh-CN</language>
+    <managingEditor>1024@lruihao.cn (Lruihao)</managingEditor>
+    <webMaster>1024@lruihao.cn (Lruihao)</webMaster>
+    <copyright>本站内容采用 CC BY-NC-SA 4.0 国际许可协议。</copyright>
+    <lastBuildDate>Sun, 24 Nov 2019 10:52:34 +0800</lastBuildDate>
+    <atom:link href="https://lruihao.cn/tags/cosalbum/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>利用腾讯云为静态页面添加“动态”相册</title>
+      <link>https://lruihao.cn/projects/cos-album/</link>
+      <pubDate>Sun, 24 Nov 2019 10:52:34 +0800</pubDate><author>1024@lruihao.cn (Lruihao)</author>
+      <guid>https://lruihao.cn/projects/cos-album/</guid>
+      <category domain="https://lruihao.cn/categories/javascript/">JavaScript</category>
+      <description>&lt;!-- markdownlint-disable MD033 --&gt;&#xA;&lt;div class=&#34;details admonition info open&#34;&gt;&#xA;  &lt;div class=&#34;details-summary admonition-title&#34;&gt;&lt;i class=&#34;icon fa-fw fa-solid fa-circle-info&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;信息&lt;i class=&#34;details-icon fa-solid fa-angle-right fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xA;  &lt;div class=&#34;details-content&#34;&gt;&#xA;    &lt;div class=&#34;admonition-content&#34;&gt;cos 桶相册，终于！！终于来了！！，idea 来自 [兰州小红鸡 - 给 hexo 静态博客添加动态相册功能]，&lt;br&gt;&#xA;&lt;strong&gt;&lt;span style=&#34;color: #428bca;&#34;&gt;功能虽好，但是还是先友情提示！&lt;/span&gt;&lt;/strong&gt;&lt;br&gt;&#xA;开放 API 是一个&lt;strong&gt;很危险&lt;/strong&gt;的操作，意味着你的 cos 桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>
